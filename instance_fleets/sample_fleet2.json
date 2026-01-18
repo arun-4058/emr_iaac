@@ -1,0 +1,71 @@
+[
+  {
+    "Name": "Primary",
+    "InstanceFleetType": "MASTER",
+    "TargetOnDemandCapacity": 1,
+    "TargetSpotCapacity": 0,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r6g.2xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.2xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.2xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  },
+  {
+    "Name": "Core",
+    "InstanceFleetType": "CORE",
+    "TargetOnDemandCapacity": 15,
+    "TargetSpotCapacity": 0,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r8g.4xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.8xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.12xlarge",
+        "WeightedCapacity": 3,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  },
+  {
+    "Name": "Task",
+    "InstanceFleetType": "TASK",
+    "TargetOnDemandCapacity": 60,
+    "TargetSpotCapacity": 0,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r8g.4xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.8xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.12xlarge",
+        "WeightedCapacity": 3,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  }
+]

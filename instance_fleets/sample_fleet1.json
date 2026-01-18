@@ -1,0 +1,91 @@
+[
+  {
+    "Name": "Primary",
+    "InstanceFleetType": "MASTER",
+    "TargetOnDemandCapacity": 1,
+    "TargetSpotCapacity": 0,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r6g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  },
+  {
+    "Name": "Core",
+    "InstanceFleetType": "CORE",
+    "TargetOnDemandCapacity": 2,
+    "TargetSpotCapacity": 0,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r8g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.2xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.2xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r6g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  },
+  {
+    "Name": "Task",
+    "InstanceFleetType": "TASK",
+    "TargetOnDemandCapacity": 2,
+    "TargetSpotCapacity": 2,
+    "InstanceTypeConfigs": [
+      {
+        "InstanceType": "r8g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r8g.2xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r7g.2xlarge",
+        "WeightedCapacity": 2,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      },
+      {
+        "InstanceType": "r6g.xlarge",
+        "WeightedCapacity": 1,
+        "BidPriceAsPercentageOfOnDemandPrice": 100
+      }
+    ]
+  }
+]
